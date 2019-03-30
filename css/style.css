@@ -308,6 +308,18 @@ main .second_row .congresistas_lista .flecha_derecha {
   }
 }
 
-.hoversector {
-  background: #9802ff;
+.hoversector_a {
+  background: #439b8f;
+}
+
+.hoversector_b {
+  background: #2ae619f6;
+}
+
+.hoversector_c {
+  background: #da3434;
+}
+
+.hoversector_d {
+  background: #439b8f;
 }
