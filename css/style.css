@@ -18,6 +18,7 @@ Azul presidencia: #2E405A
 body {
   font-size: 18px;
   font-family: 'Lato';
+  /* overflow: hidden; */
 }
 
 /* Navbar */
@@ -83,9 +84,57 @@ main .first_row .partidos ul li.list_title h2 {
   font-size: 1em;
 }
 
+main .first_row .partidos ul li.partido_cd {
+  background: #224875;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_cr {
+  background: #00529e;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_pl {
+  background: #d40000;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_pc {
+  background: #004699;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_pu {
+  background: #54af36;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_aico {
+  background: #ef0000;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_polo {
+  background: #fff103;
+  color: #000;
+}
+main .first_row .partidos ul li.partido_mira {
+  background: #0c0a6d;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_av {
+  background: #00813c;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_mais {
+  background: #f20000;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_ch {
+  background: #d53052;
+  color: #fff;
+}
+main .first_row .partidos ul li.partido_f {
+  background: #d50616;
+  color: #fff;
+}
 main .first_row .partidos ul li {
   text-align: center;
-  border: 1px solid #2e405a;
+  border-top: 1px solid #fff;
   padding: 10px;
   cursor: pointer;
   font-size: 1em;
@@ -97,13 +146,14 @@ main .first_row .contenedor_grafico {
   width: 85%;
   float: right;
   padding: 20px;
+  /* padding-bottom: 0; */
 }
 
 main .first_row .contenedor_grafico .sector {
   border: 1px solid #2e405a;
   width: 49%;
   float: left;
-  height: 12.5em;
+  height: 15em;
   margin: 2px;
 }
 
@@ -122,4 +172,125 @@ main .first_row .contenedor_grafico .sector_d p {
   /* display: inline-block; */
   margin: 10px;
   float: right;
+}
+
+/* Second Row */
+
+main .second_row {
+  width: 100%;
+  overflow: hidden;
+  border-top: 2px solid #2e405a;
+  /* padding-top: 10px; */
+  overflow: hidden;
+}
+
+/* Logo  */
+
+main .second_row .logo_mininterior {
+  width: 30%;
+  max-width: 231px;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+main .second_row .logo_mininterior a img {
+  width: 90%;
+  max-width: 231px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  margin-top: 5px;
+  align-self: flex-end;
+}
+
+/* Congresistas */
+
+main .second_row .congresistas_lista {
+  float: left;
+  width: 85%;
+  padding: 20px;
+  border: 1px solid #2e405a;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main .second_row .congresistas_lista .flecha_izquierda {
+  float: left;
+}
+
+main .second_row .congresistas_lista .congresista {
+  float: left;
+  border: 1px solid #2e405a;
+  width: 100px;
+  margin-left: 10px;
+}
+
+main .second_row .congresistas_lista .congresista .foto_congresista {
+  text-align: center;
+  width: 100%;
+}
+
+main .second_row .congresistas_lista .congresista .foto_congresista img {
+  border-radius: 100%;
+  width: 90%;
+}
+
+main .second_row .congresistas_lista .congresista .nombre_congresista {
+  text-align: center;
+  border-top: 1px solid #2e405a;
+}
+
+main .second_row .congresistas_lista .flecha_derecha {
+  float: left;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1599px) {
+  main .first_row .contenedor_grafico {
+    width: 80%;
+  }
+
+  main .second_row .congresistas_lista {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1159px) {
+  main .first_row .contenedor_grafico {
+    width: 75%;
+  }
+
+  main .second_row .congresistas_lista {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 927px) {
+  main .first_row .contenedor_grafico {
+    width: 70%;
+  }
+
+  main .second_row .congresistas_lista {
+    width: 70%;
+  }
+
+  main .second_row .congresistas_lista .congresista {
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main .first_row .contenedor_grafico {
+    width: 70%;
+  }
+
+  main .second_row .congresistas_lista {
+    width: 70%;
+  }
+
+  main .second_row .congresistas_lista .congresista {
+    width: 100px;
+  }
 }

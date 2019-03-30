@@ -1,0 +1,132 @@
+nav {
+  background: #2e405a;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+}
+
+nav .title {
+  float: left;
+  margin: 10px;
+}
+
+nav .title h1 {
+  color: #fff;
+  font-size: 1em;
+}
+
+nav .links {
+  float: right;
+}
+
+nav .links a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1em;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+nav .links a:hover {
+  color: #ddd;
+}
+
+main .first_row {
+  /* width: 50%; */
+  float: left;
+  overflow: hidden;
+  max-width: 231px;
+  top: 47px;
+  position: fixed;
+}
+
+main .first_row .partidos {
+  width: 100%;
+  float: left;
+  max-width: 232px;
+  border-right: 1px solid #2e405a;
+}
+
+main .second_row {
+  width: 85%;
+  overflow: hidden;
+  border-top: 2px solid #2e405a;
+  /* padding-top: 10px; */
+  /* overflow: hidden; */
+  float: left;
+}
+
+/* Logo  */
+
+.logo_mininterior {
+  width: 30%;
+  max-width: 231px;
+  float: left;
+  text-align: center;
+  position: fixed;
+  top: 78%;
+}
+.logo_mininterior a img {
+  width: 90%;
+  max-width: 231px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  margin-top: 5px;
+  align-self: flex-end;
+}
+
+main .second_row .congresistas_lista {
+  float: left;
+  position: absolute;
+  z-index: -2;
+  transform: translate(231px, 47px);
+  width: 85%;
+  padding: 20px;
+  border: 1px solid #2e405a;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .second_row .congresistas_lista .flecha_izquierda {
+  float: left;
+}
+
+main .second_row .congresistas_lista .congresista {
+  float: left;
+  border: 1px solid #2e405a;
+  width: 100px;
+  margin: 10px;
+}
+
+main .second_row .congresistas_lista .congresista .foto_congresista {
+  text-align: center;
+  width: 100%;
+}
+
+main .second_row .congresistas_lista .congresista .foto_congresista img {
+  border-radius: 100%;
+  width: 90%;
+}
+
+main .second_row .congresistas_lista .congresista .nombre_congresista {
+  text-align: center;
+  border-top: 1px solid #2e405a;
+}
+
+main .second_row .congresistas_lista .flecha_derecha {
+  float: left;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1599px) {
+  main .second_row .congresistas_lista {
+    width: 68%;
+  }
+}
