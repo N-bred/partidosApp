@@ -28,7 +28,6 @@ const makeRequest = async url => {
 
 const cleanDOM = () => {
   $('#congr_list').html(' ');
-  console.clear();
 };
 
 /* Make request to API function */
@@ -56,7 +55,7 @@ const makeRequestCD = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -92,7 +91,7 @@ const makeRequestPC = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -128,7 +127,7 @@ const makeRequestPU = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -163,7 +162,7 @@ const makeRequestMira = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -199,7 +198,7 @@ const makeRequestCR = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -234,7 +233,7 @@ const makeRequestPL = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -269,7 +268,7 @@ const makeRequestAV = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -304,7 +303,7 @@ const makeRequestPolo = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -339,7 +338,7 @@ const makeRequestFarc = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -374,7 +373,7 @@ const makeRequestMais = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -410,7 +409,7 @@ const makeRequestAico = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -445,7 +444,7 @@ const makeRequestCH = () => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-      <div class="congresista">
+      <div class="congresista draggable">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -482,7 +481,7 @@ const leftArrowRequest = off => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-        <div class="congresista">
+        <div class="congresista draggable">
           <div class="foto_congresista">
             <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
           </div>
@@ -532,7 +531,7 @@ const rightArrowRequest = moreset => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
       const congresista = `      
-          <div class="congresista">
+          <div class="congresista draggable">
             <div class="foto_congresista">
               <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
             </div>
