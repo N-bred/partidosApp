@@ -50,3 +50,76 @@ nav .links a {
   color: #fff;
   margin-bottom: 5px;
 }
+
+nav .links a:hover {
+  color: #ddd;
+}
+
+/* Main */
+
+main .first_row {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Firts column */
+
+main .first_row .partidos {
+  width: 30%;
+  float: left;
+  max-width: 232px;
+  border-right: 1px solid #2e405a;
+}
+
+main .first_row .partidos ul {
+  list-style: none;
+}
+
+main .first_row .partidos ul li.list_title {
+  background: #ddd;
+  border-top: none;
+}
+main .first_row .partidos ul li.list_title h2 {
+  font-size: 1em;
+}
+
+main .first_row .partidos ul li {
+  text-align: center;
+  border: 1px solid #2e405a;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Second Column */
+
+main .first_row .contenedor_grafico {
+  width: 85%;
+  float: right;
+  padding: 20px;
+}
+
+main .first_row .contenedor_grafico .sector {
+  border: 1px solid #2e405a;
+  width: 49%;
+  float: left;
+  height: 12.5em;
+  margin: 2px;
+}
+
+main .first_row .contenedor_grafico .sector .contador {
+  border: 1px solid #2e405a;
+  /* display: inline-block; */
+  margin: 10px;
+  float: left;
+  width: 55px;
+  text-align: center;
+}
+
+main .first_row .contenedor_grafico .sector_a p,
+main .first_row .contenedor_grafico .sector_d p {
+  /* letter-spacing: 0.1px; */
+  /* display: inline-block; */
+  margin: 10px;
+  float: right;
+}
