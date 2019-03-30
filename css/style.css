@@ -275,13 +275,9 @@ main .second_row .congresistas_lista .flecha_derecha {
   main .second_row .congresistas_lista {
     width: 70%;
   }
-
-  main .second_row .congresistas_lista .congresista {
-    width: 120px;
-  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 790px) {
   main .first_row .contenedor_grafico {
     width: 70%;
   }
