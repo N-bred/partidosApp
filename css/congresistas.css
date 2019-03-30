@@ -99,7 +99,7 @@ main .second_row .congresistas_lista {
   float: left;
   position: absolute;
   z-index: -2;
-  transform: translate(231px, 47px);
+  transform: translate(0px, 47px);
   width: 85%;
   padding: 20px;
   border: 1px solid #2e405a;
