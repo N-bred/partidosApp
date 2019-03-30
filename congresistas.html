@@ -3,18 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nicolas Caballero" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Congresistas</title>
     <link rel="shortcut icon" href="./img/favicons.png" type="image/x-icon" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/congresistas.css" />
-    <script src="./js/congresistas.js"></script>
   </head>
   <body>
     <nav>
@@ -28,6 +23,16 @@
     </nav>
     <main>
       <div class="first_row">
+        <div class="find">
+          <form>
+            <input
+              type="text"
+              id="buscar"
+              placeholder="Encuentre a un congresista"
+            />
+            <button id="encontrar">Buscar</button>
+          </form>
+        </div>
         <div class="partidos">
           <ul>
             <li class="list_title"><h2>Partidos Politicos</h2></li>
@@ -47,22 +52,14 @@
         </div>
       </div>
       <div class="second_row">
-        <div class="congresistas_lista">
-          <div class="congresista">
-            <div class="foto_congresista">
-              <img src="./img/alvaro.jpg" alt="Alvaro Uribe Velez" />
-            </div>
-            <div class="nombre_congresista">
-              <p>Alvaro Uribe</p>
-            </div>
-          </div>
-        </div>
+        <div class="congresistas_lista"></div>
       </div>
       <div class="logo_mininterior">
-        <a href="#" target="_blank"
+        <a href="https://www.mininterior.gov.co" target="_blank"
           ><img src="./img/logoMin.png" alt="Ministerio del interior"
         /></a>
       </div>
     </main>
+    <script src="./js/congresistas.js"></script>
   </body>
 </html>
