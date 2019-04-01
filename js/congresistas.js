@@ -1,22 +1,22 @@
 /* Make request to API function */
 
 const makeRequest = async url => {
-  try {
-    const request = await fetch(url);
-    const data = await request.json();
-    return data;
-  } catch (e) {
-    console.log(e);
-  }
+   try {
+      const request = await fetch(url);
+      const data = await request.json();
+      return data;
+   } catch (e) {
+      console.log(e);
+   }
 };
 
 const cleanDOM = () => {
-  $('.congresistas_lista').html(' ');
-  console.clear();
+   $('#congr_list').html(' ');
+   console.clear();
 };
 
 const api =
-  'https://legislapp.mininterior.gov.co/api/partidos_politicos/ponentes/';
+   'https://legislapp.mininterior.gov.co/api/partidos_politicos/ponentes/';
 
 const apiFormat = '/?limit=200';
 
@@ -29,13 +29,13 @@ const encontrar = $('#encontrar');
 // Request CD
 
 const makeRequestCD = () => {
-  cleanDOM();
-  const url = `${api}6${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}6${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -45,9 +45,9 @@ const makeRequestCD = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_cd').on('click', makeRequestCD);
@@ -55,13 +55,13 @@ $('.partido_cd').on('click', makeRequestCD);
 // Request PC
 
 const makeRequestPC = () => {
-  cleanDOM();
-  const url = `${api}13${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}13${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -71,9 +71,9 @@ const makeRequestPC = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_pc').on('click', makeRequestPC);
@@ -81,13 +81,13 @@ $('.partido_pc').on('click', makeRequestPC);
 // Request PU
 
 const makeRequestPU = () => {
-  cleanDOM();
-  const url = `${api}14${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}14${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -97,9 +97,9 @@ const makeRequestPU = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_pu').on('click', makeRequestPU);
@@ -107,13 +107,13 @@ $('.partido_pu').on('click', makeRequestPU);
 // Request Mira
 
 const makeRequestMira = () => {
-  cleanDOM();
-  const url = `${api}12${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}12${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -123,9 +123,9 @@ const makeRequestMira = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_mira').on('click', makeRequestMira);
@@ -133,13 +133,13 @@ $('.partido_mira').on('click', makeRequestMira);
 // Request CR
 
 const makeRequestCr = () => {
-  cleanDOM();
-  const url = `${api}5${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}5${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -149,9 +149,9 @@ const makeRequestCr = () => {
         <p class="comision">Comision: ${congresistas.comision}</PL
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_cr').on('click', makeRequestCr);
@@ -159,13 +159,13 @@ $('.partido_cr').on('click', makeRequestCr);
 // Request PL
 
 const makeRequestPL = () => {
-  cleanDOM();
-  const url = `${api}15${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}15${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -175,9 +175,9 @@ const makeRequestPL = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_pl').on('click', makeRequestPL);
@@ -185,13 +185,13 @@ $('.partido_pl').on('click', makeRequestPL);
 // Request AV
 
 const makeRequestAV = () => {
-  cleanDOM();
-  const url = `${api}2${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}2${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -201,9 +201,9 @@ const makeRequestAV = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_av').on('click', makeRequestAV);
@@ -211,13 +211,13 @@ $('.partido_av').on('click', makeRequestAV);
 // Request Polo
 
 const makeRequestPolo = () => {
-  cleanDOM();
-  const url = `${api}17${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}17${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -227,9 +227,9 @@ const makeRequestPolo = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_polo').on('click', makeRequestPolo);
@@ -237,13 +237,13 @@ $('.partido_polo').on('click', makeRequestPolo);
 // Request Farc
 
 const makeRequestFarc = () => {
-  cleanDOM();
-  const url = `${api}10${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}10${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -253,9 +253,9 @@ const makeRequestFarc = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_f').on('click', makeRequestFarc);
@@ -263,13 +263,13 @@ $('.partido_f').on('click', makeRequestFarc);
 // Request Mais
 
 const makeRequestMais = () => {
-  cleanDOM();
-  const url = `${api}11${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}11${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -279,9 +279,9 @@ const makeRequestMais = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_mais').on('click', makeRequestMais);
@@ -289,13 +289,13 @@ $('.partido_mais').on('click', makeRequestMais);
 // Request Aico
 
 const makeRequestAico = () => {
-  cleanDOM();
-  const url = `${api}1${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}1${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -305,9 +305,9 @@ const makeRequestAico = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_aico').on('click', makeRequestAico);
@@ -315,13 +315,13 @@ $('.partido_aico').on('click', makeRequestAico);
 // Request CH
 
 const makeRequestCH = () => {
-  cleanDOM();
-  const url = `${api}8${apiFormat}`;
-  const requestApi = makeRequest(url);
-  requestApi.then(data => {
-    data.results.forEach(congresistas => {
-      // Start DOM Manipulation
-      const congresista = `<div class="congresista">
+   cleanDOM();
+   const url = `${api}8${apiFormat}`;
+   const requestApi = makeRequest(url);
+   requestApi.then(data => {
+      data.results.forEach(congresistas => {
+         // Start DOM Manipulation
+         const congresista = `<div class="congresista">
         <div class="foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
@@ -331,15 +331,15 @@ const makeRequestCH = () => {
         <p class="comision">Comision: ${congresistas.comision}</p>
       </div>`;
 
-      $('.congresistas_lista').append(congresista);
-    });
-  });
+         $('#congr_list').append(congresista);
+      });
+   });
 };
 
 $('.partido_ch').on('click', makeRequestCH);
 
 $(encontrar).on('click', function(e) {
-  e.preventDefault();
+   e.preventDefault();
 
-  find($(input).val());
+   find($(input).val());
 });

@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Nicolas Caballero" />
-    <meta name="contact" content="nicolas.penuela@mininterior.gov.co" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Congresistas</title>
-    <link rel="shortcut icon" href="./img/favicons.png" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <link rel="stylesheet" href="./css/congresistas.min.css" />
-  </head>
-  <body>
-    <nav>
-      <div class="title">
-        <h1>Aplicacion de confianza / nivel de acuerdo</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Nicolas Caballero" />
+  <meta name="contact" content="nicolas.penuela@mininterior.gov.co" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Congresistas</title>
+  <link rel="shortcut icon" href="./img/favicons.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/congresistas.min.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="title">
+      <h1>Aplicacion de confianza / nivel de acuerdo</h1>
+    </div>
+    <div class="links">
+      <a href="./index.html" target="_blank">Grafico</a>
+      <a href="./congresistas.html" target="_blank">Congresistas</a>
+    </div>
+  </nav>
+  <main>
+    <div class="first_row">
+      <div class="find">
+        <form>
+          <input type="text" id="buscar" placeholder="Encuentre a un congresista" />
+          <button id="encontrar">Buscar</button>
+        </form>
       </div>
-      <div class="links">
-        <a href="./index.html" target="_blank">Grafico</a>
-        <a href="./congresistas.html" target="_blank">Congresistas</a>
+      <div class="partidos">
+        <ul>
+          <li class="list_title">
+            <h2>Partidos Politicos</h2>
+          </li>
+          <li class="partido_cd">Centro Democratico</li>
+          <li class="partido_cr">Cambio Radical</li>
+          <li class="partido_pl">Partido Liberal</li>
+          <li class="partido_pc">Partido Conservador</li>
+          <li class="partido_pu">Partido de la U</li>
+          <li class="partido_aico">Aico</li>
+          <li class="partido_polo">Polo Democratico</li>
+          <li class="partido_mira">Mira</li>
+          <li class="partido_av">Alianza Verde</li>
+          <li class="partido_mais">Mais</li>
+          <li class="partido_ch">Colombia Humana</li>
+          <li class="partido_f">Farc</li>
+        </ul>
       </div>
-    </nav>
-    <main>
-      <div class="first_row">
-        <div class="find">
-          <form>
-            <input
-              type="text"
-              id="buscar"
-              placeholder="Encuentre a un congresista"
-            />
-            <button id="encontrar">Buscar</button>
-          </form>
-        </div>
-        <div class="partidos">
-          <ul>
-            <li class="list_title"><h2>Partidos Politicos</h2></li>
-            <li class="partido_cd">Centro Democratico</li>
-            <li class="partido_cr">Cambio Radical</li>
-            <li class="partido_pl">Partido Liberal</li>
-            <li class="partido_pc">Partido Conservador</li>
-            <li class="partido_pu">Partido de la U</li>
-            <li class="partido_aico">Aico</li>
-            <li class="partido_polo">Polo Democratico</li>
-            <li class="partido_mira">Mira</li>
-            <li class="partido_av">Alianza Verde</li>
-            <li class="partido_mais">Mais</li>
-            <li class="partido_ch">Colombia Humana</li>
-            <li class="partido_f">Farc</li>
-          </ul>
-        </div>
+    </div>
+    <div class="second_row">
+      <div class="congresistas_lista">
+        <div id="congr_list"></div>
       </div>
-      <div class="second_row">
-        <div class="congresistas_lista"></div>
-      </div>
-      <!--<div class="logo_mininterior">
+    </div>
+    <!--<div class="logo_mininterior">
         <a href="https://www.mininterior.gov.co" target="_blank"
           ><img src="./img/logoMin.png" alt="Ministerio del interior"
         /></a>
       </div> -->
-    </main>
-    <script src="./js/congresistas.min.js"></script>
-  </body>
+  </main>
+  <script src="./js/congresistas.min.js"></script>
+</body>
+
 </html>
