@@ -260,15 +260,22 @@ main .second_row .congresistas_lista .flecha_izquierda {
 main .second_row .congresistas_lista .flecha_izquierda #flecha_izquierda_link,
 main .second_row .congresistas_lista .flecha_derecha #flecha_derecha_link {
   font-size: 36px;
-  color: #2e405a
+  color: #2e405a;
 }
 
-main .second_row .congresistas_lista .flecha_izquierda #flecha_izquierda_link:hover,
-main .second_row .congresistas_lista .flecha_derecha #flecha_derecha_link:hover {
+main
+  .second_row
+  .congresistas_lista
+  .flecha_izquierda
+  #flecha_izquierda_link:hover,
+main
+  .second_row
+  .congresistas_lista
+  .flecha_derecha
+  #flecha_derecha_link:hover {
   font-size: 36px;
   color: #ff9802;
 }
-
 
 main .second_row .congresistas_lista .congresista {
   float: left;
@@ -307,22 +314,6 @@ main .second_row .congresistas_lista .congresista .nombre_congresista p {
 main .second_row .congresistas_lista .flecha_derecha {
   float: left;
   margin-left: 10px;
-}
-
-.hoversector_a {
-  background: #439b8f;
-}
-
-.hoversector_b {
-  background: #2ae619f6;
-}
-
-.hoversector_c {
-  background: #da3434;
-}
-
-.hoversector_d {
-  background: #439b8f;
 }
 
 @media screen and (min-width: 1920px) {
@@ -495,4 +486,20 @@ main .second_row .congresistas_lista .flecha_derecha {
     background: url('../img/790/sector_d.png') no-repeat #fff;
     background-size: 100%;
   }
+}
+
+.hoversector_a {
+  background: #74918d77;
+}
+
+.hoversector_b {
+  background: #1bfc067c;
+}
+
+.hoversector_c {
+  background: #ee0d0d81;
+}
+
+.hoversector_d {
+  background: #74918d77;
 }
