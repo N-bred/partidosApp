@@ -40,6 +40,30 @@ const input = $('#buscar');
 
 const encontrar = $('#encontrar');
 
+const createCongressmen = (src, name) => {
+  const cardItem = document.createElement('div');
+  $(cardItem).addClass('card');
+  const img = document.createElement('img');
+  $(img).addClass('card-img-top');
+  img.src = src;
+  img.alt = name;
+  const cardBody = document.createElement('div');
+  $(cardBody).addClass('card-body');
+  const cardText = document.createElement('p');
+  $(cardText).addClass('card-text text-center');
+  $(cardText).text(name);
+
+  $(cardBody).append(cardText);
+  $(cardItem).append(img);
+  $(cardItem).append(cardBody);
+
+  return cardItem;
+};
+
+$('#card_container').append(
+  createCongressmen('https://unsplash.it/500', 'Alvaro Velez')
+);
+
 const plantilla_card = `
 <div class="card">
 <img
