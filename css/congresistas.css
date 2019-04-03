@@ -11,10 +11,6 @@
   background: #202d3f;
 }
 
-.no-border {
-  border-radius: 0;
-}
-
 .list-group a:hover {
   text-decoration: none;
 }
@@ -23,113 +19,35 @@
   background: #111822;
 }
 
-.move-left {
-  display: none;
-}
-
-#menu-toggle {
-  color: #fff;
-}
-
-.text-black {
-  color: #000 !important;
-}
-
-li:hover {
-  background: rgba(255, 255, 255, 0.884);
-}
-
 .btn-hover-custom:hover {
   background: transparent;
+  color: #fff;
 }
 
 .btn-hover-custom:active {
   background: #202d3f !important;
+  color: #fff !important;
 }
 
-.fixed_nav {
-  position: fixed;
-  border-bottom: 20px solid #fff;
+.card-container {
+  display: flex;
+  flex-flow: row wrap !important;
+  justify-items: space-between !important;
+  margin-top: 10px;
+  margin: 10px auto;
 }
 
-.mlcustom {
-  position: absolute;
-  z-index: -5;
-  left: 50px;
-  top: 80px;
+.card {
+  width: 12rem !important;
+  margin: 15px auto;
 }
 
-.container .second_row .congresistas_lista #congr_list {
-  width: 80%;
-  margin: 0 auto;
-  height: auto;
+.card img {
+  max-height: 190px;
+  min-height: 190px;
 }
-
-.container .second_row .congresistas_lista .congresista {
-  float: left;
-  border: 1px solid #2e405a;
-  width: 160px;
-  min-height: 270px;
-  max-height: 270px;
-  margin: 10px;
-}
-
-.container .second_row .congresistas_lista .comision {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.container .second_row .congresistas_lista .congresista .foto_congresista {
-  text-align: center;
-}
-
-.container .second_row .congresistas_lista .congresista .foto_congresista img {
-  border-radius: 0 !important;
-  width: 100%;
-  vertical-align: top;
-  min-width: 158px;
-  max-width: 158px;
-  min-height: 129px;
-  max-height: 129px;
-}
-
-.container .second_row .congresistas_lista .congresista .nombre_congresista {
-  text-align: center;
-  border-top: 1px solid #2e405a;
-  padding-top: 20px;
-}
-
-.container .second_row .congresistas_lista .flecha_derecha {
-  float: left;
-  margin-left: 10px;
-}
-
 @media screen and (max-width: 1599px) {
   .container .second_row .congresistas_lista {
     width: 100%;
-  }
-}
-
-@media (min-width: 400px) {
-  .mlcustom {
-    position: absolute;
-    z-index: -5;
-    left: 75px;
-  }
-}
-
-@media (min-width: 768px) {
-  .mlcustom {
-    position: absolute;
-    z-index: -5;
-    left: 100px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .mlcustom {
-    position: absolute;
-    z-index: -5;
-    left: 130px;
   }
 }

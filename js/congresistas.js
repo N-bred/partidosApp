@@ -51,14 +51,17 @@ const makeRequestCD = () => {
   requestApi.then(data => {
     data.results.forEach(congresistas => {
       // Start DOM Manipulation
-      const congresista = `<div class="congresista">
-        <div class="foto_congresista">
+      const congresista = `<div class="card congresista">
+        <div class="card-img-top foto_congresista">
           <img src="${congresistas.foto}" alt="${congresistas.nombres}" />
         </div>
-        <div class="nombre_congresista">
-          <p>${congresistas.nombres}</p>
+        <div class="card-body nombre_congresista">
+          <p class="card-text">${congresistas.nombres}</p>
+          
         </div>
-        <p class="comision">Comision: ${congresistas.comision}</p>
+        <div class="card-body comsion">
+        <p class="card-text">Comision: ${congresistas.comision}</p>
+        </div> 
       </div>`;
 
       $('#congr_list').append(congresista);
