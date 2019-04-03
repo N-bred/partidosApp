@@ -40,6 +40,18 @@ const input = $('#buscar');
 
 const encontrar = $('#encontrar');
 
+const plantilla_card = `
+<div class="card">
+<img
+  class="card-img-top"
+  src=" "
+  alt=" "
+/>
+<div class="card-body">
+  <p class="card-text text-center"> </p>
+</div>
+</div>`;
+
 /* Start by making the api request with a function */
 
 // Request CD

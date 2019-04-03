@@ -17,7 +17,7 @@ Azul presidencia: #2E405A
 
 body {
   font-size: 18px;
-  font-family: 'Lato';
+  /* font-family: 'Lato'; */
   overflow-x: hidden;
   /* overflow: hidden; */
 }
