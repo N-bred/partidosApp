@@ -37,6 +37,10 @@
   margin: 10px auto;
 }
 
+.title-congress {
+  font-size: 32px;
+}
+
 .card {
   width: 12rem !important;
   margin: 15px auto;
