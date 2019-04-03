@@ -26,27 +26,167 @@
   <body>
     <div class="d-flex" id="wrapper">
       <!-- Sidebar -->
-      <div class="bg-light border-right" id="sidebar-wrapper">
-        <div class="sidebar-heading">Start Bootstrap</div>
+      <div class=" text-white bg-principaldarker" id="sidebar-wrapper">
+        <div class="sidebar-heading text-center">Partidos APP</div>
         <div class="list-group list-group-flush">
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Dashboard</a
-          >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Shortcuts</a
-          >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Overview</a
-          >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Events</a
-          >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Profile</a
-          >
-          <a href="#" class="list-group-item list-group-item-action bg-light"
-            >Status</a
-          >
+          <!-- Dropdown List -->
+          <ul class="list-unstyled list-group  components text-center ">
+            <li class="active">
+              <a
+                href="#homeSubmenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle list-group-item bg-principal text-white"
+                >Senado</a
+              >
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Plenaria</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Primera</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Segunda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Tercera</a
+                  >
+                </li>
+          
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Cuarta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Quinta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Sexta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Septima</a
+                  >
+                </li>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="#pageSubmenu"
+                data-toggle="collapse"
+                aria-expanded="false"
+                class="dropdown-toggle list-group-item bg-principal text-white"
+                >Camara</a
+              >
+              <ul class="collapse list-group list-unstyled" id="pageSubmenu">
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Plenaria</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Primera</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Segunda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Tercera</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Cuarta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Quinta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Sexta</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    target="_blank"
+                    class=" list-group-item bg-principaldarker text-white no-hover text-white"
+                    >Comision Septima</a
+                  >
+                </li>
+                <li class="list-group-item bg-principal ">
+                  &nbsp;
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
       <!-- /#sidebar-wrapper -->
@@ -54,9 +194,14 @@
       <!-- Page Content -->
       <div id="page-content-wrapper">
         <nav
-          class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+          class="navbar navbar-expand-lg navbar-dark bg-principal border-bottom"
         >
-          <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+          <button
+            class="btn btn-outline-light btn-hover-custom"
+            id="menu-toggle"
+          >
+            Menu
+          </button>
 
           <button
             class="navbar-toggler"
@@ -72,40 +217,29 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" target="_blank"
+                  >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="./grafico.html" target="_blank"
+                  >Grafico</a
+                >
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item active">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  class="nav-link"
+                  href="./congresoSidebar.html"
+                  target="_blank"
+                  >Congresistas <span class="sr-only">(current)</span></a
                 >
-                  Dropdown
-                </a>
-                <div
-                  class="dropdown-menu dropdown-menu-right"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
               </li>
             </ul>
           </div>
         </nav>
 
+        <!-- Content Start  -->
         <div class="container-fluid">
           <h1 class="mt-4">Simple Sidebar</h1>
           <p>

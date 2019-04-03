@@ -4,8 +4,23 @@
   background: #2e405a;
 }
 
+.bg-principal:hover {
+  background: #2e405a;
+}
+.bg-principaldarker {
+  background: #202d3f;
+}
+
 .no-border {
   border-radius: 0;
+}
+
+.list-group a:hover {
+  text-decoration: none;
+}
+
+.no-hover:hover {
+  background: #111822;
 }
 
 .move-left {
@@ -22,6 +37,14 @@
 
 li:hover {
   background: rgba(255, 255, 255, 0.884);
+}
+
+.btn-hover-custom:hover {
+  background: transparent;
+}
+
+.btn-hover-custom:active {
+  background: #202d3f !important;
 }
 
 .fixed {
