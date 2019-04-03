@@ -10,10 +10,10 @@ body {
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin .25s ease-out;
-  -moz-transition: margin .25s ease-out;
-  -o-transition: margin .25s ease-out;
-  transition: margin .25s ease-out;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -31,6 +31,17 @@ body {
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+}
+
+.fixed-copy {
+  position: fixed;
+  width: 240px;
+  z-index: 5000;
+  top: 92% !important;
+}
+
+.fixed-copy h1 {
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
