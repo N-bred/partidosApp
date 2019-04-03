@@ -1,17 +1,9 @@
-// Calls the Camara and Senado buttons
-
-$('#btn_senado').on('click', () => {
-  $('#list_senado').toggleClass('d-none');
-});
-
-$('#btn_camara').on('click', () => {
-  $('#list_camara').toggleClass('d-none');
-});
-
 // Create Date
 
 const year = new Date();
 $('#year').text(year.getFullYear());
+
+// Menu Toggle
 
 $('#menu-toggle').click(function(e) {
   e.preventDefault();
@@ -65,7 +57,7 @@ const makeGlobal = (id, nombrePartido) => {
   makeRequest(api).then(congresmen => {
     congresmen.results.forEach(congresman => {
       if (
-        congresman.comision === 'Primera' &&
+        congresman.comision === 'Séptima' &&
         congresman.organismo === 'Senado'
       ) {
         $('#card_container').append(
