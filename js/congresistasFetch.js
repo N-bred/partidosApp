@@ -10,6 +10,13 @@ $('#menu-toggle').click(function(e) {
   $('#wrapper').toggleClass('toggled');
 });
 
+// Find
+
+$('#btn_find').on('click', function(e) {
+  e.preventDefault();
+  find($('#find').val());
+});
+
 // MakeRequest Function
 
 const makeRequest = async url => {
