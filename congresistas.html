@@ -8,28 +8,136 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Congresistas</title>
     <link rel="shortcut icon" href="./img/favicons.png" type="image/x-icon" />
-    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
-    <link rel="stylesheet" href="./css/congresistas.min.css" />
+    <!-- <link rel="stylesheet" href="./css/style.min.css" /> -->
+    <link rel="stylesheet" href="./css/congresistas.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <nav>
-      <div class="title">
-        <h1>Aplicacion de confianza / nivel de acuerdo</h1>
-      </div>
-      <div class="links">
-        <a href="./index.html"></a>
-        <a href="./grafico.html" target="_blank">Grafico</a>
-        <a href="./congresistas.html" target="_blank">Congresistas</a>
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-principal ">
+      <div class="container">
+        <a class="navbar-brand" href="#">Partidos APP</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="./index.html">Inicio</a>
+            <a class="nav-item nav-link" href="./grafico.html">Grafico</a>
+            <a class="nav-item nav-link active" href="./congresistas.html"
+              >Congresistas <span class="sr-only">(current)</span></a
+            >
+          </div>
+        </div>
       </div>
     </nav>
     <main>
-      <div class="first_row">
+      <div class="row">
+        <div class="col-12 col-sm-3 col-md-2 text-center pt-2" id="sidebar">
+          <a
+            href="javascript:void(0)"
+            id="btn_senado"
+            class="btn btn-dark  bg-principal btn-block btn-lg no-border"
+            >Senado &nbsp;<i class="fa fa-users" aria-hidden="true"></i
+          ></a>
+          <div id="list_senado" class="d-none">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="_blank">Plenaria</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Primera Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Segunda Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Tercera Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Cuarta Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Quinta Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Sexta Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Septima Comision</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="javascript:void(0)"
+            id="btn_camara"
+            class="btn btn-lg btn-dark bg-principal btn-block no-border"
+            >Camara &nbsp;<i class="fa fa-users" aria-hidden="true"></i
+          ></a>
+          <div id="list_camara" class="d-none">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="#" target="_blank">Plenaria</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Primera Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Segunda Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Tercera Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Cuarta Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Quinta Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Sexta Comision</a>
+              </li>
+              <li class="list-group-item">
+                <a href="#" target="_blank">Septima Comision</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-sm-9 col-md-10">
+          <button
+            class="navbar-toggler bg-principal"
+            type="button"
+            data-toggle="collapse"
+            data-target="#sidebar"
+            aria-controls="sidebar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#" id="sidebar_toggle">Toggle!</a>
+        </div>
+      </div>
+
+      <!--<div class="first_row">
         <div class="find">
           <form>
             <input
@@ -59,18 +167,26 @@
             <li class="partido_f">Farc</li>
           </ul>
         </div>
-      </div>
-      <div class="second_row">
+      </div> -->
+      <!--<div class="second_row">
         <div class="congresistas_lista">
           <div id="congr_list"></div>
         </div>
-      </div>
+      </div>-->
       <!--<div class="logo_mininterior">
         <a href="https://www.mininterior.gov.co" target="_blank"
           ><img src="./img/logoMin.png" alt="Ministerio del interior"
         /></a>
       </div> -->
     </main>
-    <script src="./js/congresistas.min.js"></script>
+    <footer class="text-center mt-5">
+      <h1>
+        <small class="small"
+          >Created by Nicolas Caballero - <span id="year"></span> &copy; All
+          Rights Reserved</small
+        >
+      </h1>
+    </footer>
+    <script src="./js/congresistas.js"></script>
   </body>
 </html>
