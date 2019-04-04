@@ -5,14 +5,14 @@
 }
 
 .principal {
-  padding: 0 20px 10px !important;
+  padding: 0 20px 100px !important;
 }
 
 .negativo {
-  padding: 50px 20px 250px !important;
+  padding: 100px 20px 250px !important;
 }
 .contenedor-sector {
-  padding: 50px 20px 10px;
+  padding: 100px 20px 100px;
 }
 
 .sector {
@@ -27,15 +27,19 @@
 
 .sector-a {
   border: 2px solid rgb(52, 58, 64) !important;
+  z-index: -3;
 }
 .sector-b {
   border: 2px solid rgb(40, 167, 69) !important;
+  z-index: -3;
 }
 .sector-c {
   border: 2px solid rgb(220, 53, 69) !important;
+  z-index: -3;
 }
 .sector-d {
   border: 2px solid rgb(52, 58, 64) !important;
+  z-index: -3;
 }
 
 .contador_a {
@@ -43,29 +47,42 @@
   border: 2px solid rgb(52, 58, 64);
   height: 25px;
   background: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+  z-index: 50000;
 }
 .contador_b {
   width: 50px;
   border: 2px solid rgb(40, 167, 69);
   height: 25px;
   background: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+  z-index: 50000;
 }
 .contador_c {
   width: 50px;
   border: 2px solid rgb(220, 53, 69);
   height: 25px;
   background: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+  z-index: 50000;
 }
 .contador_d {
   width: 50px;
   border: 2px solid rgb(52, 58, 64);
   height: 25px;
+  text-align: center;
+  padding-bottom: 25px;
   background: #fff;
+  z-index: 50000;
 }
 
 .congresmen {
   height: 12em;
   border: 2px solid rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
 }
 
 .index {
@@ -73,11 +90,7 @@
 }
 
 .card-container {
-  display: flex;
-  flex-flow: row wrap !important;
-  justify-items: space-between !important;
-  margin-top: 10px;
-  margin: 10px auto;
+  /* overflow-y: scroll; */
 }
 
 .title-congress {
@@ -97,10 +110,16 @@
 }
 
 .card-mini {
+  display: inline-flex;
   cursor: pointer;
-  width: 6rem !important;
+  width: 60px !important;
   margin: 5px auto;
   max-height: 250px !important;
+}
+
+.card-mini-static {
+  width: 6rem !important;
+  position: relative;
 }
 
 .card-mini img {
@@ -108,20 +127,32 @@
   min-height: 20px;
 }
 
-.hoversector_a {
-  background: rgb(52, 58, 64);
+.card-mini .card-body {
+  display: none;
+}
+
+.card .card-footer {
+  display: none;
+}
+.card-mini .card-footer {
+  display: none;
+}
+
+.card-mini p {
+  font-size: 12px;
+  display: none;
+}
+.hoversector_a,
+.hoversector_d {
+  background: rgba(147, 164, 182, 0.5);
 }
 
 .hoversector_b {
-  background: rgb(40, 167, 69);
+  background: rgba(40, 167, 69, 0.5);
 }
 
 .hoversector_c {
-  background: rgb(220, 53, 69);
-}
-
-.hoversector_d {
-  background: rgb(52, 58, 64);
+  background: rgba(220, 53, 69, 0.5);
 }
 
 @media (min-width: 768px) {
@@ -141,6 +172,7 @@
   .congresmen {
     height: 12em;
     position: static;
+    overflow-y: scroll;
   }
   .navbar-custom {
     position: static;
@@ -150,5 +182,43 @@
     width: 10rem !important;
     margin: 8px auto;
     max-height: 250px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 600px) and (max-height: 650px) {
+  .principal {
+    padding: 0 20px 150px !important;
+  }
+
+  .negativo {
+    padding: 100px 20px 250px !important;
+  }
+  .contenedor-sector {
+    padding: 100px 20px 150px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-height: 651px) and (max-height: 701px) {
+  .principal {
+    padding: 0 20px 200px !important;
+  }
+
+  .negativo {
+    padding: 100px 20px 250px !important;
+  }
+  .contenedor-sector {
+    padding: 100px 20px 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-height: 701px) and (max-height: 812px) {
+  .principal {
+    padding: 0 20px 310px !important;
+  }
+
+  .negativo {
+    padding: 100px 20px 250px !important;
+  }
+  .contenedor-sector {
+    padding: 100px 20px 350px;
   }
 }

@@ -1,10 +1,10 @@
 const sound_good = new Audio();
 const sound_bad = new Audio();
 
-let counter_a = 0;
-let counter_b = 0;
-let counter_c = 0;
-let counter_d = 0;
+let counter_a = 1;
+let counter_b = 1;
+let counter_c = 1;
+let counter_d = 1;
 
 const playSoundGood = () => {
   sound_good.src = './sound/good.mp3';
@@ -16,8 +16,84 @@ const playSoundBad = () => {
 };
 
 $('.card').draggable({
-  start: function(event, ui) {
+  stop: function(event, ui) {
     $(this).addClass('card-mini');
+  }
+});
+
+$('#btn_find').on('click', function(e) {
+  e.preventDefault();
+  find($('#find').val());
+});
+
+$('.sector-a').droppable({
+  drop: function(e, ui) {
+    const xRandom = Math.random() * 30;
+    const yRandom = Math.random() * 30;
+    const xnotRandom = Math.random() * -30;
+    const ynotRandom = Math.random() * -30;
+    const xRandomF = xRandom + xnotRandom;
+    const yRandomF = yRandom + ynotRandom;
+    $(e.target).append($(ui.draggable).css({ top: xRandomF, left: yRandomF }));
+    $('.contador_a').text(counter_a++);
+    playSoundBad();
+  },
+  hoverClass: 'hoversector_a',
+  out: function(e, ui) {
+    $('.contador_a').text(counter_a--);
+  }
+});
+$('.sector-b').droppable({
+  drop: function(e, ui) {
+    const xRandom = Math.random() * 30;
+    const yRandom = Math.random() * 30;
+    const xnotRandom = Math.random() * -30;
+    const ynotRandom = Math.random() * -30;
+    const xRandomF = xRandom + xnotRandom;
+    const yRandomF = yRandom + ynotRandom;
+    $(e.target).append($(ui.draggable).css({ top: xRandomF, left: yRandomF }));
+    $('.contador_b').text(counter_b++);
+    playSoundGood();
+  },
+  hoverClass: 'hoversector_b',
+  out: function(e, ui) {
+    $('.contador_b').text(counter_b--);
+  }
+});
+$('.sector-c').droppable({
+  drop: function(e, ui) {
+    const xRandom = Math.random() * 30;
+    const yRandom = Math.random() * 30;
+    const xnotRandom = Math.random() * -30;
+    const ynotRandom = Math.random() * -30;
+    const xRandomF = xRandom + xnotRandom;
+    const yRandomF = yRandom + ynotRandom;
+    $(e.target).append($(ui.draggable).css({ top: xRandomF, left: yRandomF }));
+
+    $('.contador_c').text(counter_c++);
+    playSoundBad();
+  },
+  hoverClass: 'hoversector_c',
+  out: function(e, ui) {
+    $('.contador_c').text(counter_c--);
+  }
+});
+$('.sector-d').droppable({
+  drop: function(e, ui) {
+    const xRandom = Math.random() * 30;
+    const yRandom = Math.random() * 30;
+    const xnotRandom = Math.random() * -30;
+    const ynotRandom = Math.random() * -30;
+    const xRandomF = xRandom + xnotRandom;
+    const yRandomF = yRandom + ynotRandom;
+    $(e.target).append($(ui.draggable).css({ top: xRandomF, left: yRandomF }));
+
+    $('.contador_d').text(counter_d++);
+    playSoundBad();
+  },
+  hoverClass: 'hoversector_d',
+  out: function(e, ui) {
+    $('.contador_d').text(counter_d--);
   }
 });
 
