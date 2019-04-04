@@ -64,8 +64,8 @@ const makeGlobal = (id, nombrePartido) => {
   makeRequest(api).then(congresmen => {
     congresmen.results.forEach(congresman => {
       if (
-        congresman.comision === 'Séptima' &&
-        congresman.organismo === 'Senado'
+        congresman.comision === 'Tercera' &&
+        congresman.organismo === 'Cámara'
       ) {
         $('#card_container').append(
           createCongressmen(congresman.foto, congresman.nombres, nombrePartido)
