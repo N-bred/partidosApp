@@ -1,8 +1,3 @@
-setInterval(() => {
-  $('.draggable').draggable();
-  console.log('Cambio hecho');
-}, 1000);
-
 const sound_good = new Audio();
 const sound_bad = new Audio();
 
@@ -20,47 +15,41 @@ const playSoundBad = () => {
   sound_bad.play();
 };
 
-$('.sector_a').droppable({
-  accept: '.draggable',
-  hoverClass: 'hoversector_a',
-  drop: function(ev, ui) {
-    $('.contador_a').html((counter_a = counter_a + 1));
-    playSoundBad();
-  },
-  out: function() {
-    $('.contador_a').html((counter_a = counter_a - 1));
+$('.card').draggable({
+  start: function(event, ui) {
+    $(this).addClass('card-mini');
   }
 });
-$('.sector_b').droppable({
-  accept: '.draggable',
-  hoverClass: 'hoversector_b',
-  drop: function() {
-    $('.contador_b').html((counter_b = counter_b + 1));
-    playSoundGood();
-  },
-  out: function() {
-    $('.contador_b').html((counter_b = counter_b - 1));
-  }
-});
-$('.sector_c').droppable({
-  accept: '.draggable',
-  hoverClass: 'hoversector_c',
-  drop: function() {
-    $('.contador_c').html((counter_c = counter_c + 1));
-    playSoundBad();
-  },
-  out: function() {
-    $('.contador_c').html((counter_c = counter_c - 1));
-  }
-});
-$('.sector_d').droppable({
-  accept: '.draggable',
-  hoverClass: 'hoversector_d',
-  drop: function() {
-    $('.contador_d').html((counter_d = counter_d + 1));
-    playSoundBad();
-  },
-  out: function() {
-    $('.contador_d').html((counter_d = counter_d - 1));
-  }
-});
+
+// const appendCongressmen = (name, src) => {
+//   const card = document.createElement('div');
+//   $(card).addClass('card  bg-primary');
+//   const img = document.createElement('img');
+//   $(img).addClass('card-img-top');
+//   img.src = src;
+//   img.alt = name;
+//   const cardBody = document.createElement('div');
+//   $(cardBody).addClass('card-body');
+//   const cardText = document.createElement('p');
+//   $(cardText).addClass('card-text text-center');
+//   $(cardText).text(name);
+
+//   $(cardBody).append(cardText);
+//   $(card).append(img);
+//   $(card).append(cardBody);
+
+//   return card;
+// };
+
+// $('.card').on('click', function() {
+//   const name = this.children[0].alt;
+//   const img = this.children[0].src;
+
+//   console.log(this.children[0].src);
+
+//   return appendCongressmen(name, img);
+// });
+
+// $('.sector-a').on('click', function() {
+//   console.log(appendCongressmen);
+// });

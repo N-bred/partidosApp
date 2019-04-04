@@ -1,0 +1,154 @@
+.title-contenedor {
+  font-size: 26px;
+  /* padding: 30px 0 0; */
+  display: inline-block;
+}
+
+.principal {
+  padding: 0 20px 10px !important;
+}
+
+.negativo {
+  padding: 50px 20px 250px !important;
+}
+.contenedor-sector {
+  padding: 50px 20px 10px;
+}
+
+.sector {
+  height: 15em;
+  cursor: pointer;
+}
+
+.bg-grey {
+  background: rgba(200, 200, 200, 1);
+  background: #141c27;
+}
+
+.sector-a {
+  border: 2px solid rgb(52, 58, 64) !important;
+}
+.sector-b {
+  border: 2px solid rgb(40, 167, 69) !important;
+}
+.sector-c {
+  border: 2px solid rgb(220, 53, 69) !important;
+}
+.sector-d {
+  border: 2px solid rgb(52, 58, 64) !important;
+}
+
+.contador_a {
+  width: 50px;
+  border: 2px solid rgb(52, 58, 64);
+  height: 25px;
+  background: #fff;
+}
+.contador_b {
+  width: 50px;
+  border: 2px solid rgb(40, 167, 69);
+  height: 25px;
+  background: #fff;
+}
+.contador_c {
+  width: 50px;
+  border: 2px solid rgb(220, 53, 69);
+  height: 25px;
+  background: #fff;
+}
+.contador_d {
+  width: 50px;
+  border: 2px solid rgb(52, 58, 64);
+  height: 25px;
+  background: #fff;
+}
+
+.congresmen {
+  height: 12em;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.index {
+  z-index: 5000;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap !important;
+  justify-items: space-between !important;
+  margin-top: 10px;
+  margin: 10px auto;
+}
+
+.title-congress {
+  font-size: 32px;
+}
+
+.card {
+  cursor: pointer;
+  width: 10rem !important;
+  margin: 5px auto;
+  max-height: 250px !important;
+}
+
+.card img {
+  max-height: 80px;
+  min-height: 20px;
+}
+
+.card-mini {
+  cursor: pointer;
+  width: 6rem !important;
+  margin: 5px auto;
+  max-height: 250px !important;
+}
+
+.card-mini img {
+  max-height: 50px;
+  min-height: 20px;
+}
+
+.hoversector_a {
+  background: rgb(52, 58, 64);
+}
+
+.hoversector_b {
+  background: rgb(40, 167, 69);
+}
+
+.hoversector_c {
+  background: rgb(220, 53, 69);
+}
+
+.hoversector_d {
+  background: rgb(52, 58, 64);
+}
+
+@media (min-width: 768px) {
+  .contenedor-sector {
+    padding: 10px 5px 0px !important;
+  }
+  .neutral-d,
+  .negativo {
+    padding: 10px 5px 50px !important;
+  }
+  .title-contenedor {
+    font-size: 32px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+  }
+  .congresmen {
+    height: 12em;
+    position: static;
+  }
+  .navbar-custom {
+    position: static;
+  }
+  .card {
+    cursor: pointer;
+    width: 10rem !important;
+    margin: 8px auto;
+    max-height: 250px !important;
+  }
+}

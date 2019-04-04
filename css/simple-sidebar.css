@@ -36,7 +36,9 @@ body {
 .fixed-copy {
   position: fixed;
   width: 240px;
+  /* left: 0px; */
   z-index: 5000;
+  /* padding: 0; */
   top: 92% !important;
 }
 
