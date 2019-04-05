@@ -97,6 +97,29 @@ $('.sector-d').droppable({
   }
 });
 
+//  Creacion de textos
+const a_favor = document.createElement('h3');
+$(a_favor)
+  .text('A Favor')
+  .addClass('text-center');
+const indeciso = document.createElement('h3');
+$(indeciso)
+  .text('Indeciso')
+  .addClass('text-center');
+const en_contra = document.createElement('h3');
+$(en_contra)
+  .text('En Contra')
+  .addClass('text-center');
+
+//  Eliminacion y modificacion de clases
+$('.contenedor-sector.order-2').remove();
+$('.contenedor-sector')
+  .removeClass('col-md-6')
+  .addClass('col-md-4');
+$('.contenedor-sector.order-1').prepend(a_favor);
+$('.contenedor-sector.order-3').prepend(indeciso);
+$('.contenedor-sector.order-4').prepend(en_contra);
+
 // const appendCongressmen = (name, src) => {
 //   const card = document.createElement('div');
 //   $(card).addClass('card  bg-primary');

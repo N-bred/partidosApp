@@ -159,6 +159,26 @@
   .contenedor-sector {
     padding: 10px 5px 0px !important;
   }
+  .card-mini {
+    display: inline-flex;
+    cursor: pointer;
+    width: 50px !important;
+    margin: 5px auto;
+    max-height: 250px !important;
+  }
+  .card-mini-static {
+    width: 6rem !important;
+    position: relative;
+  }
+  .sector {
+    height: 24em;
+    cursor: pointer;
+  }
+  .card-mini img {
+    width: 50px;
+    max-height: 50px;
+    min-height: 20px;
+  }
   .neutral-d,
   .negativo {
     padding: 10px 5px 50px !important;
@@ -179,9 +199,28 @@
   }
   .card {
     cursor: pointer;
-    width: 10rem !important;
+    width: 10rem;
     margin: 8px auto;
     max-height: 250px !important;
+  }
+}
+
+@media (min-width: 1920px) {
+  .sector {
+    height: 41em;
+    cursor: pointer;
+  }
+  .card-mini {
+    display: inline-flex;
+    cursor: pointer;
+    width: 80px !important;
+    margin: 5px auto;
+    max-height: 250px !important;
+  }
+  .card-mini img {
+    width: 80px;
+    max-height: 80px;
+    min-height: 20px;
   }
 }
 
